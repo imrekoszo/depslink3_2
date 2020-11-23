@@ -3,7 +3,7 @@
   (:require [clojure.edn :as edn]
             [clojure.java.io :as io]))
 
-(defn -main [& args]
+(defn -main [& _]
   (println "Hello world, here's my deps.edn:"
            (-> "project-deps.edn"
                io/resource
