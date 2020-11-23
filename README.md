@@ -2,10 +2,10 @@
 just run
 
 just compile
-just uberjar
+just uberjar-incorrect
 just run-uberjar
 
-just uberdeps-fixed
+just uberjar
 
 just run-uberjar
 ```

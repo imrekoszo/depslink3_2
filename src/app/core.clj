@@ -8,4 +8,5 @@
            (-> "project-deps.edn"
                io/resource
                slurp
-               edn/read-string)))
+               edn/read-string
+               pr-str)))
