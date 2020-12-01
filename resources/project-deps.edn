@@ -1,3 +1,5 @@
 {:paths   ["src" "resources"]
- :aliases {:uberjar {:extra-deps {org.clojure/clojure {:mvn/version "1.10.1"}}
+ :deps    {net.cgrand/xforms {:mvn/version "0.19.2"
+                              :exclusions  [org.clojure/clojurescript]}}
+ :aliases {:uberjar {:extra-deps  {org.clojure/clojure {:mvn/version "1.10.1"}}
                      :extra-paths ["classes"]}}}

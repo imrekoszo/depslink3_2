@@ -11,11 +11,15 @@ compile:
 
 uberjar-incorrect:
   mkdir -p classes
-  clojure -Srepro -Sdeps '{:aliases {:uberjar {:replace-deps {uberdeps/uberdeps {:mvn/version "1.0.2"}}}}}' -M:uberjar -m uberdeps.uberjar --aliases uberjar
+  clojure -Srepro -Sdeps '{:aliases {:uberjar {:replace-paths [] :replace-deps {uberdeps/uberdeps {:mvn/version "1.0.2"}}}}}' -M:uberjar -m uberdeps.uberjar --aliases uberjar
+
+uberjar-no-replace-paths:
+  mkdir -p classes
+  clojure -Srepro -Sdeps '{:aliases {:uberjar {:replace-deps {uberdeps/uberdeps {:mvn/version "1.0.3"}}}}}' -M:uberjar -m uberdeps.uberjar --aliases uberjar
 
 uberjar:
   mkdir -p classes
-  clojure -Srepro -Sdeps '{:aliases {:uberjar {:replace-deps {uberdeps/uberdeps {:mvn/version "1.0.3"}}}}}' -M:uberjar -m uberdeps.uberjar --aliases uberjar
+  clojure -Srepro -Sdeps '{:aliases {:uberjar {:replace-paths [] :replace-deps {uberdeps/uberdeps {:mvn/version "1.0.3"}}}}}' -M:uberjar -m uberdeps.uberjar --aliases uberjar
 
 # run from uberjar
 run-uberjar:
