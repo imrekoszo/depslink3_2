@@ -1,6 +1,6 @@
 # Repro repository
 
-Originally created to repro https://github.com/cursive-ide/cursive/issues/2360, later extended to repro other tooling errors I came across.
+Originally created to repro https://github.com/cursive-ide/cursive/issues/2360, later extended to repro other tooling quirks I came across.
 
 Example commands can also be run using [Just](https://github.com/casey/just); check [Justfile](./Justfile) or run `just help` for more details.
 
