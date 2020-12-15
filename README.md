@@ -6,6 +6,8 @@ Example commands can also be run using [Just](https://github.com/casey/just); ch
 
 ## Missing :replace-paths repro case
 
+Demonstrating https://ask.clojure.org/index.php/9947/could-replace-deps-imply-replace-paths-by-default
+
 ```shell script
 # works
 #   just replace-paths
